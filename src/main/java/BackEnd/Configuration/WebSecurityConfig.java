@@ -2,8 +2,10 @@ package BackEnd.Configuration;
 
 import static BackEnd.Model.Roles.RoleName.ADMIN;
 import BackEnd.Service.AppUserDetailsService;
+import org.apache.catalina.filters.CorsFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -13,6 +15,8 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
 
 @Configuration
 @EnableWebSecurity
@@ -33,7 +37,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/css/**", "/js/**","/register","/login/**","/articles/**").permitAll()
+                .antMatchers("/css/**", "/js/**", "/register", "/login/**", "/articles/**").permitAll()
                 .antMatchers("/admin/**").hasRole(ADMIN.shorten())
                 .anyRequest().authenticated()
                 .and()

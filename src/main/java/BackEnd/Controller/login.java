@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/login")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://54.37.125.178", allowCredentials = "true")
 public class login {
     @Autowired
     SecurityService securityService;

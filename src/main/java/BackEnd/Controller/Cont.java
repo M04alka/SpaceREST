@@ -8,17 +8,15 @@ import BackEnd.Service.ArticleService;
 
 import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.HttpServerErrorException;
+
 
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://54.37.125.178", allowCredentials = "true")
 @RequestMapping("/articles")
 public class Cont {
    @Autowired

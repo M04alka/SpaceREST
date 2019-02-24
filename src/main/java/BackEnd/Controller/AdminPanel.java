@@ -1,15 +1,14 @@
 package BackEnd.Controller;
-
 import BackEnd.DTO.ArticlesDto;
 import BackEnd.Service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.NotNull;
-@CrossOrigin(origins = "http://localhost:3000")
+
+@CrossOrigin(origins = "http://54.37.125.178", allowCredentials = "true")
 @RestController
 @RequestMapping("/admin")
 @PreAuthorize("hasRole('ADMIN')")

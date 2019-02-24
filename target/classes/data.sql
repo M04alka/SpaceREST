@@ -1,0 +1,35 @@
+INSERT INTO `article` (`id`, `content`, `url_picture`, `category_id`, `time_stamp`, `title`) VALUES
+(1, 'Here can be your add Phone 88005353.......', 'https://wi-images.condecdn.net/image/B1NZW376pxM/crop/1620/f/space_11.jpg', 1, '12345', 'Ayo' ),
+(2, 'Here can be your add Phone 88005353.......', 'http://nsuzivo.rs/wp-content/uploads/2019/01/zvezde.jpg', 2, '443', 'Hi'),
+(3, 'Here can be your add Phone 88005353.......', 'https://naucnenovosti.me/wp-content/uploads/2018/08/space-2638126_960_720.jpg', 3, '12325', 'How'),
+(4, 'Here can be your add Phone 88005353.......', 'https://entropymag.org/wp-content/uploads/2014/10/outer-space-wallpaper-pictures.jpg', 5, '3124', 'Kek ?'),
+(5, 'Here can be your add Phone 88005353.......', 'https://wi-images.condecdn.net/image/B1NZW376pxM/crop/1620/f/space_11.jpg', 6, '12345', 'Nice' ),
+(6, 'Here can be your add Phone 88005353.......', 'https://wi-images.condecdn.net/image/B1NZW376pxM/crop/1620/f/space_11.jpg', 7, '443', 'Miss me&'),
+(7, 'Here can be your add Phone 88005353.......', 'https://cdn-images-1.medium.com/max/1200/1*bctVCWmlPbQqHAUV-pHXog.jpeg', 8, '12325', 'Im here'),
+(8, 'Here can be your add Phone 88005353.......', 'https://wi-images.condecdn.net/image/B1NZW376pxM/crop/1620/f/space_11.jpg', 9, '12325', 'Hello'),
+(9, 'Here can be your add Phone 88005353.......', 'https://www.pillowfights.gr/wp-content/uploads/2018/06/xenia782.jpg', 10, '3124', 'Yoyoyoyo'),
+(10, 'Here can be your add Phone 88005353.......', 'https://wi-images.condecdn.net/image/B1NZW376pxM/crop/1620/f/space_11.jpg', 1, '12345', 'Whats Up?' ),
+(11, 'Here can be your add Phone 88005353.......', 'https://media.graytvinc.com/images/810*455/space+mgn.jpg', 2, '443', 'Im tired'),
+(12, 'Here can be your add Phone 88005353.......', 'https://wi-images.condecdn.net/image/B1NZW376pxM/crop/1620/f/space_11.jpg', 3, '12325', 'Kill me '),
+(13, 'Here can be your add Phone 88005353.......', 'https://wi-images.condecdn.net/image/B1NZW376pxM/crop/1620/f/space_11.jpg', 4, '12325', 'Omg'),
+(14, 'Here can be your add Phone 88005353.......', 'https://s.yimg.com/ny/api/res/1.2/P9Okug4cRM_TM.BxiYSP5A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAwO2lsPXBsYW5l/http://media.zenfs.com/en_US/News/US-AFPRelax/istock_507026288.eaac5151124.original.jpg', 5, '3124', 'Funny?'),
+(15, 'Here can be your add Phone 88005353.......', 'https://wi-images.condecdn.net/image/B1NZW376pxM/crop/1620/f/space_11.jpg', 6, '12345', 'No(' ),
+(16, 'Here can be your add Phone 88005353.......', 'http://www.zero2infinity.space/wp-content/themes/z2i_tema/bloon/css/imgs/slide7.jpg', 7, '443', 'Damn'),
+(17, 'Here can be your add Phone 88005353.......', 'https://wi-images.condecdn.net/image/B1NZW376pxM/crop/1620/f/space_11.jpg', 8, '12325', 'Im on Fire'),
+(18, 'Here can be your add Phone 88005353.......', 'https://www.armytimes.com/resizer/E0Me8L1iqdz9ZHyT1HuZzkMKSXY=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/EICDEMKIV5GGJB244DMR4MPQZM.jpg', 9, '12325', 'MORE TITLES'),
+(19, 'Here can be your add Phone 88005353.......', 'https://wi-images.condecdn.net/image/B1NZW376pxM/crop/1620/f/space_11.jpg', 10, '3124', 'EVEN MORE TITLES'),
+(20, 'Here can be your add Phone 88005353.......', 'http://images.astronet.ru/pubd/2005/12/22/0001210531/m31_gendler_Nmosaic1.jpg', 1, '3124', 'SO MUCH TITLES'),
+(21, 'Here can be your add Phone 88005353.......', 'https://wi-images.condecdn.net/image/B1NZW376pxM/crop/1620/f/space_11.jpg', 4, '12325', 'Are you');
+
+
+INSERT INTO `category` (`id`, `name`) VALUES
+(1, 'NearSpace'),
+(2, 'MiddleSpace'),
+(3, 'Farspace'),
+(4, 'DeepGalaxy'),
+(5, 'LowGalaxy'),
+(6, 'MiddleGalaxy'),
+(7, 'FarPlanet'),
+(8, 'NearPlanet'),
+(9, 'MiddlePlanet'),
+(10, 'SomeWhereElse');

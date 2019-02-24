@@ -1,9 +1,12 @@
 package BackEnd.Model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 @NoArgsConstructor
@@ -11,7 +14,8 @@ import java.util.Set;
 @Getter
 @Setter
 @Entity
-public class Users  {
+@Builder
+public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -19,9 +23,12 @@ public class Users  {
     private String login;
     @NotNull
     private String password;
-    @NotNull
-    @ElementCollection
-    @Enumerated(EnumType.STRING)
+
+    @Transient
+    private String passwordConfirm;
+
+    @ManyToMany
+    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Roles> roles;
 
 }
